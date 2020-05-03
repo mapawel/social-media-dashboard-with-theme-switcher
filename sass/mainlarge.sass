@@ -1,1 +1,29 @@
+// SECTION HEAD
+section.head
+    justify-content: space-between
+    align-items: center
+    .underline
+        display: none
+    .title
+        margin: 0
+        width: 50%
+    .switch-box
+        justify-content: flex-end
+        margin: 0
+        width: 50%
+    
+    
+    // SECTION GENERAL (UPPER)
+section.general, section.overview
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+.general-box, .overview-box
+    width: 48%
+    max-width: none
+    &:nth-of-type(odd)
+        margin-right: 2%
 
+.overview-box
+    padding: 23px 50px

@@ -10,3 +10,36 @@ $colCardBG: hsl(227, 47%, 96%)
 $col1Text: hsl(228, 12%, 44%)
 $col2Text: hsl(230, 17%, 14%)
 
+// GENERAL ELEMENTS
+body
+    font-family: 'Inter', sans-serif
+    background-color: $colBG
+
+h2, span
+    color: $col2Text
+h3, h4
+    color: $col1Text
+
+main::before
+    background-color: $colTopBGPattern
+
+// SECTION HEAD 
+.head
+    .switch-box
+        .switcher
+            background-color: $colToggle
+            .knob
+                background-color: $colCardBG
+        p
+            color: $col1Text
+    .underline
+        background-color: $col1Text
+
+
+// SECTION GENERAL (UPPER) + SECTION OVERVIEW (LOWER)
+.general-box, .overview-box
+    .unit, .head
+        p
+            color: $col1Text
+    background-color: $colCardBG
+

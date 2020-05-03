@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=mainlarge.css.map */
+section.head {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.head .underline {
+  display: none;
+}
+
+section.head .title {
+  margin: 0;
+  width: 50%;
+}
+
+section.head .switch-box {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  width: 50%;
+}
+
+section.general, section.overview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.general-box, .overview-box {
+  width: 48%;
+  max-width: none;
+}
+
+.general-box:nth-of-type(odd), .overview-box:nth-of-type(odd) {
+  margin-right: 2%;
+}
+
+.overview-box {
+  padding: 23px 50px;
+}
+/*# sourceMappingURL=mainlarge.css.map */

@@ -5,9 +5,9 @@
 // ### Primary
 $colLimeGreen: hsl(163, 72%, 41%)
 $colBrightRed: hsl(356, 69%, 56%)
-$colFacebook: hsl(195, 100%, 50%)
-$colTwitter: hsl(203, 89%, 53%)
-$colInstagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
+$colTwitter: hsl(195, 100%, 50%)
+$colFacebook: hsl(203, 89%, 53%)
+$colInstagram: linear-gradient(90deg, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%)
 $colYouTube: hsl(348, 97%, 39%)
 
 // GENERAL ELEMENTS
@@ -20,9 +20,169 @@ html
 body
     font-family: 'Inter', sans-serif
 
+h2
+    margin-bottom: 2px
+    font-weight: 700
+    font-size: 1.7rem
+    letter-spacing: .02rem
+h3
+    width: 100%
+    margin-bottom: 25px
+    letter-spacing: .02rem
+    font-size: 1.6rem
 
+.green
+    font-size: .8rem
+    color: $colLimeGreen
+    font-weight: 700
 
+.red
+    font-size: .8rem
+    color: $colBrightRed
+    font-weight: 700
 
+.wrapp
+    width: 85%
+    max-width: 1080px
+    margin: 40px auto
+
+// SECTION HEAD 
+section.head
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+    margin-bottom: 30px
+    .title
+        width: 100%
+    .switch-box
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 20px 0
+        .switcher
+            position: relative
+            width: 50px
+            height: 24px
+            border-radius: 12px 
+            .knob
+                position: absolute
+                top: 2px
+                left: 2px
+                width: 20px
+                height: 20px
+                border-radius: 50%
+            .knob-dark
+                left: 28px
+        p
+            position: relative
+            margin-right: 15px
+            font-size: .9rem
+            font-weight: 700
+    .underline
+        height: 2px
+        width: 100%
+        margin-top: 28px
+
+// SECTION GENERAL (UPPER)
+section.general
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-bottom: 30px
+    
+.general-box
+    position: relative
+    width: 100%
+    max-width: 500px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 12px 0
+    padding: 35px 20px 25px
+    border-radius: 6px
+    img
+        margin-right: 5px
+    .head
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 15px
+        p
+            font-size: .9rem
+            font-weight: 700
+    .data
+        span
+            display: block
+            font-size: 4.2rem
+            font-weight: 700
+            margin-bottom: 5px
+    .unit
+        margin-bottom: 22px
+        p
+            text-transform: uppercase
+            font-size: .9rem
+            letter-spacing: .3rem
+    .foot
+        display: flex
+        justify-content: center
+        align-items: center
+.color-bar
+    position: absolute
+    top: 0
+    left: 0
+    height: 4px
+    width: 100%
+    border-radius: 5px 5px 0 0
+
+.border-facebook    
+    background-color: $colFacebook
+
+.border-twitter    
+    background-color: $colTwitter
+
+.border-instagram    
+    background-image: $colInstagram
+
+.border-youTube   
+    background-color: $colYouTube
+
+// SECTION OVERVIEW (LOWER)
+section.overview
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+.overview-box
+    width: 100%
+    max-width: 500px
+    display: flex
+    flex-wrap: wrap
+    margin: 9px 0
+    padding: 23px 25px
+    border-radius: 6px
+    .head
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 20px
+        flex-basis: 100%
+        p
+            font-size: .9rem
+            font-weight: 700
+    .data
+        flex-basis: 50%
+        span
+            font-size: 2.2rem
+            font-weight: 700
+    .data2
+        flex-basis: 50%
+        align-self: flex-end
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        padding-bottom: 5px
+        img
+            margin-right: 5px
 
 
 

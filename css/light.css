@@ -1,1 +1,41 @@
-/* No CSS *//*# sourceMappingURL=light.css.map */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+h2, span {
+  color: #1e202a;
+}
+
+h3, h4 {
+  color: #63687e;
+}
+
+main::before {
+  background-color: #f5f7ff;
+}
+
+.head .switch-box .switcher {
+  background-color: #aeb3cb;
+}
+
+.head .switch-box .switcher .knob {
+  background-color: #f0f2fa;
+}
+
+.head .switch-box p {
+  color: #63687e;
+}
+
+.head .underline {
+  background-color: #63687e;
+}
+
+.general-box, .overview-box {
+  background-color: #f0f2fa;
+}
+
+.general-box .unit p, .general-box .head p, .overview-box .unit p, .overview-box .head p {
+  color: #63687e;
+}
+/*# sourceMappingURL=light.css.map */

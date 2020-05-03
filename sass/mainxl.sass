@@ -1,1 +1,23 @@
+// SECTION GENERAL (UPPER)
+section.general
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    
+.general-box, .overview-box
+    width: 245px
+    max-width: none
+    &:nth-of-type(odd)
+        margin-right: 0
+.overview-box
+    padding: 23px 25px
 
+main::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 240px
+    border-radius: 0 0 10px 10px
+    z-index: -1
