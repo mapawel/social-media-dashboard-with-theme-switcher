@@ -12,8 +12,8 @@ $col2Text: hsl(230, 17%, 14%)
 
 // GENERAL ELEMENTS
 body
-    font-family: 'Inter', sans-serif
     background-color: $colBG
+    font-family: 'Inter', sans-serif
 
 h2, span
     color: $col2Text
@@ -30,6 +30,15 @@ main::before
             background-color: $colToggle
             .knob
                 background-color: $colCardBG
+                &:hover~.switcher-rainbow
+                    opacity: 1
+        .switcher-rainbow
+            background-image: linear-gradient(60deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%)
+            opacity: 0
+            transition: opacity .4s
+            &:hover
+                opacity: 1
+
         p
             color: $col1Text
     .underline
@@ -38,8 +47,18 @@ main::before
 
 // SECTION GENERAL (UPPER) + SECTION OVERVIEW (LOWER)
 .general-box, .overview-box
+    &:hover
+        background-color: #dfe2ec
     .unit, .head
         p
             color: $col1Text
     background-color: $colCardBG
+    transition: background-color .3s
 
+// FOOTER ATTRIBUTION
+footer-attribution
+    background-color: $colTopBGPattern
+    color: $col2Text
+    .attribution
+        a
+            color: $col1Text

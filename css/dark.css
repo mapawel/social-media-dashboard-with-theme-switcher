@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=dark.css.map */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #1e202a;
+}
+
+h2, span {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: #8b97c6;
+}
+
+main::before {
+  background-color: #1f212e;
+}
+
+.head .switch-box {
+  pointer-events: none;
+}
+
+.head .switch-box:hover > p {
+  color: white;
+}
+
+.head .switch-box .switcher {
+  pointer-events: auto;
+  background-image: linear-gradient(60deg, #378fe6 0%, #3eda82 100%);
+}
+
+.head .switch-box .switcher .knob {
+  background-color: #252a41;
+}
+
+.head .switch-box p {
+  color: #8b97c6;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.head .underline {
+  background-color: #8b97c6;
+}
+
+.general-box, .overview-box {
+  background-color: #252a41;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+.general-box:hover, .overview-box:hover {
+  background-color: #30364d;
+}
+
+.general-box .unit p, .general-box .head p, .overview-box .unit p, .overview-box .head p {
+  color: #8b97c6;
+}
+
+footer-attribution {
+  background-color: #1f212e;
+  color: white;
+}
+
+footer-attribution .attribution a {
+  color: #8b97c6;
+}
+/*# sourceMappingURL=dark.css.map */

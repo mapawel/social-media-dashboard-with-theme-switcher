@@ -2,7 +2,7 @@
 // ## Colors
 // #### Dark Theme
 // ### Primary
-$colToggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
+$colToggle: linear-gradient(60deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%)
 // ### Neutral
 $colBG: hsl(230, 17%, 14%)
 $colTopBGPattern: hsl(232, 19%, 15%)
@@ -10,3 +10,52 @@ $colCardBG: hsl(228, 28%, 20%)
 $col1Text: hsl(228, 34%, 66%)
 $col2Text: hsl(0, 0%, 100%)
 
+// GENERAL ELEMENTS
+body
+    font-family: 'Inter', sans-serif
+    background-color: $colBG
+
+h2, span
+    color: $col2Text
+h3 
+    color: $col2Text
+h4
+    color: $col1Text
+
+main::before
+    background-color: $colTopBGPattern
+
+// SECTION HEAD 
+.head
+    .switch-box
+        pointer-events: none
+        &:hover>p
+            color: $col2Text
+        .switcher
+            pointer-events: auto
+            background-image: $colToggle
+            .knob
+                background-color: $colCardBG
+        p
+            color: $col1Text
+            transition: color .4s
+    .underline
+        background-color: $col1Text
+
+// SECTION GENERAL (UPPER) + SECTION OVERVIEW (LOWER)
+.general-box, .overview-box
+    &:hover
+        background-color: #30364d
+    .unit, .head
+        p
+            color: $col1Text
+    background-color: $colCardBG
+    transition: background-color .3s
+
+// FOOTER ATTRIBUTION
+footer-attribution
+    background-color: $colTopBGPattern
+    color: $col2Text
+    .attribution
+        a
+            color: $col1Text

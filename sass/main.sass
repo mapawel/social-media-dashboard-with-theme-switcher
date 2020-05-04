@@ -18,27 +18,31 @@ html
     scroll-behavior: smooth
 
 body
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     font-family: 'Inter', sans-serif
 
 h2
     margin-bottom: 2px
-    font-weight: 700
     font-size: 1.7rem
+    font-weight: 700
     letter-spacing: .02rem
 h3
     width: 100%
     margin-bottom: 25px
-    letter-spacing: .02rem
     font-size: 1.6rem
+    letter-spacing: .02rem
 
 .green
-    font-size: .8rem
     color: $colLimeGreen
+    font-size: .8rem
     font-weight: 700
 
 .red
-    font-size: .8rem
     color: $colBrightRed
+    font-size: .8rem
     font-weight: 700
 
 .wrapp
@@ -50,38 +54,47 @@ h3
 section.head
     display: flex
     flex-wrap: wrap
-    margin-bottom: 20px
     margin-bottom: 30px
     .title
         width: 100%
     .switch-box
-        width: 100%
         display: flex
         justify-content: space-between
         align-items: center
+        width: 100%
         margin: 20px 0
         .switcher
             position: relative
             width: 50px
             height: 24px
             border-radius: 12px 
+            cursor: pointer
+            .switcher-rainbow
+                position: absolute
+                top: 0
+                left: 0
+                width: 50px
+                height: 24px
+                border-radius: 12px 
             .knob
                 position: absolute
                 top: 2px
-                left: 2px
+                left: 28px
+                z-index: 1
                 width: 20px
                 height: 20px
                 border-radius: 50%
+                transition: left .3s
             .knob-dark
-                left: 28px
+                left: 2px
         p
             position: relative
             margin-right: 15px
             font-size: .9rem
             font-weight: 700
     .underline
-        height: 2px
         width: 100%
+        height: 2px
         margin-top: 28px
 
 // SECTION GENERAL (UPPER)
@@ -93,14 +106,15 @@ section.general
     
 .general-box
     position: relative
-    width: 100%
-    max-width: 500px
     display: flex
     flex-direction: column
     align-items: center
+    width: 100%
+    max-width: 500px
     margin: 12px 0
     padding: 35px 20px 25px
     border-radius: 6px
+    cursor: pointer
     img
         margin-right: 5px
     .head
@@ -114,14 +128,14 @@ section.general
     .data
         span
             display: block
+            margin-bottom: 5px
             font-size: 4.2rem
             font-weight: 700
-            margin-bottom: 5px
     .unit
         margin-bottom: 22px
         p
-            text-transform: uppercase
             font-size: .9rem
+            text-transform: uppercase
             letter-spacing: .3rem
     .foot
         display: flex
@@ -131,8 +145,8 @@ section.general
     position: absolute
     top: 0
     left: 0
-    height: 4px
     width: 100%
+    height: 4px
     border-radius: 5px 5px 0 0
 
 .border-facebook    
@@ -153,19 +167,20 @@ section.overview
     flex-wrap: wrap
     justify-content: center
 .overview-box
-    width: 100%
-    max-width: 500px
     display: flex
     flex-wrap: wrap
+    width: 100%
+    max-width: 500px
     margin: 9px 0
     padding: 23px 25px
     border-radius: 6px
+    cursor: pointer
     .head
         display: flex
         justify-content: space-between
         align-items: center
-        margin-bottom: 20px
         flex-basis: 100%
+        margin-bottom: 20px
         p
             font-size: .9rem
             font-weight: 700
@@ -175,24 +190,26 @@ section.overview
             font-size: 2.2rem
             font-weight: 700
     .data2
-        flex-basis: 50%
-        align-self: flex-end
         display: flex
+        flex-basis: 50%
         align-items: center
         justify-content: flex-end
+        align-self: flex-end
         padding-bottom: 5px
         img
             margin-right: 5px
 
+// footer with attributions
+footer-attribution
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding: 10px
+    .attribution
+        font-size: 11px
+        text-align: center
+        flex-basis: 100%
+        padding: 5px
+        a
+            color: hsl(228, 45%, 44%)
 
-
-
-
-
-
-// attribution frontend mentor
-.attribution
-    font-size: 11px
-    text-align: center
-.attribution a
-    color: hsl(228, 45%, 44%)
