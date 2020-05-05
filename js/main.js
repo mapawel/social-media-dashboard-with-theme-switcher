@@ -1,19 +1,18 @@
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded', () => {
 
-const cssColors = document.querySelector('#cssColors');
-const knob = document.querySelector('.knob');
-const switcherRainbow = document.querySelector('.switcher-rainbow');
+    const cssColors = document.querySelector('#cssColors');
+    const knob = document.querySelector('.knob');
+    const switcher = document.querySelector('.switcher');
 
-const toggle = () => {
-    knob.classList.toggle('knob-dark');
-    if (cssColors.getAttribute('href') == './css/light.css'){
-        cssColors.setAttribute('href','./css/dark.css');
-    } else {
-        cssColors.setAttribute('href','./css/light.css')
+    const toggle = () => {
+        knob.classList.toggle('knob-dark');
+        if (cssColors.getAttribute('href') == './css/light.css') {
+            cssColors.setAttribute('href', './css/dark.css');
+        } else {
+            cssColors.setAttribute('href', './css/light.css')
+        }
     }
-}
 
-switcherRainbow.addEventListener('click',toggle);
-knob.addEventListener('click',toggle);
+    switcher.addEventListener('click', toggle);
 
 })
